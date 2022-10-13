@@ -152,4 +152,8 @@ div input:focus, div select:focus{
         box-shadow: none;
         border: none;
     }
-  }
+    #button {
+        margin-top: 10%
+    }
+}
+  
