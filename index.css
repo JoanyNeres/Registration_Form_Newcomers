@@ -145,8 +145,7 @@ div input:focus, div select:focus{
 }
 
 @media (max-width: 600px){
-    #cover {
-      background-image: none;
+    body {
       background-color: #fff;
   }
   }
