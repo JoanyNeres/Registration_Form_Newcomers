@@ -143,3 +143,10 @@ div input:focus, div select:focus{
 #button:hover{
     background: grey;
 }
+
+@media (max-width: 800px){
+    .body_content {
+      background-image: none;
+      background-color: #fff;
+  }
+  }
