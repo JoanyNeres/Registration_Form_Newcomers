@@ -144,11 +144,12 @@ div input:focus, div select:focus{
     background: grey;
 }
 
-@media (max-width: 800px){
+@media (max-width: 600px){
     body {
         background-color: #fff;
     }
     #cover {
         box-shadow: none;
+        border: none;
     }
   }
