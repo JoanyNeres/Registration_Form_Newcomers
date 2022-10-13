@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#maple{
+    display: grid;
+    justify-content: center;
+    margin-top:2%;
+    font-size:1px;
+}
+
+#title{
+    font-family: sans-serif, "glacial indifference";
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    display: grid;
+    justify-content: center;
+    margin-top:2%;
+}
+
+#subtitle1{
+    font-family: sans-serif, "open sans light";
+    font-weight: lighter;
+    font-size:40px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    justify-content: center;
+}
+
+#cover{
+    background-color:rgb(255, 255, 255);
+    border: 1.5px;
+    box-shadow: 1px 1px 1px 1px rgb(230, 230, 230);
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#name, #last_name, #email, #gender, #country{
+    padding: 2px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: grid;
+    align-content: center;
+    color: grey;
+    font-size: 16px;
+}
+
+.radio_container{
+    font-size: 16px;
+    padding: 8px;
+    display: grid;
+    justify-content: left;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.radio_container label{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.radio_container label::before{
+    content:"";
+    border: 2px solid grey;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.radio_container label::after{
+    content:"";
+    display: inline-block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 0, 0, 0);
+    left: 7px;
+    top: 12px;
+    margin: -7px 20px;
+    margin-left: -2px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.15s;
+}
+
+input[type="radio"]:checked + label::after{
+    background-color: rgba(255, 0, 0, 1);
+    transform: scale(1);
+}
+
+body{
+    background-color:rgb(221, 221, 221);
+    font-family: sans-serif;
+    font-size: 1em;
+    color: grey;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select, button{
+    border-radius: 5px;
+}
+
+div input[type="text"], div input[type="email"], div select{
+    padding: 2%;
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: 1px 1px 1px 1px rgb(230, 230, 230);
+    display: block;
+}
+
+div input:focus, div select:focus{
+    background-color: rgb(230, 230, 230);
+}
+
+#button{
+    font-size: 18px;
+    background-color: red;
+    border:0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #fff;
+    padding: 1.5% 3%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    left: 40%;
+    position: relative;
+    cursor: pointer;
+}
+
+#button:hover{
+    background: grey;
+}
